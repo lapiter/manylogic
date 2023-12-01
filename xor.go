@@ -17,7 +17,7 @@ func Xor(inputs ...bool) bool {
 	return previousTrue
 }
 
-// XorCallback returns true if the callback returns true with one and only one input
+// XorCb returns true if the callback returns true with one and only one input
 // otherwise returns false
 // returns false when called with no input
 func XorCb[T any](inputs []T, callback func(T) bool) bool {
